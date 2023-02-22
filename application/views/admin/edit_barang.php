@@ -18,11 +18,10 @@
 
                 <div class="form-group">
                     <label>Kategori</label>
-                    <select value="<?php echo $brng->kategori ?>" class="form-control" name="kategori" id="">
-                        <option value="<?php echo $brng->kategori ?>"><?php echo $brng->kategori ?></option>
-                        <option value="makanan">Makanan</option>
-                        <option value="minuman">Minuman</option>
-                        <option value="snack">Snack</option>
+                    <select class="form-control" name="kategori" id="">
+                        <option value="makanan" <?= ($brng->kategori == 'makanan') ? 'selected' : '' ?>>Makanan</option>
+                        <option value="minuman" <?= ($brng->kategori == 'minuman') ? 'selected' : '' ?>>Minuman</option>
+                        <option value="snack" <?= ($brng->kategori == 'snack') ? 'selected' : '' ?>>Snack</option>
                     </select>
                 </div>
 
