@@ -18,13 +18,12 @@ class Registrasi extends CI_Controller
         if ($this->form_validation->run() == FALSE) {
             $this->load->view('templates/header');
             $this->load->view('registrasi');
-            $this->load->view('templates/footer');
         } else {
             $data = array(
                 'id' => '',
                 'nama' => $this->input->post('nama'),
                 'username' => $this->input->post('username'),
-                'password' => $this->input->post('password1'),
+                'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
                 'role_id' => 2
             );
 
