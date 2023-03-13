@@ -39,9 +39,10 @@
                         </table>
 
                         <?php echo anchor('dashboard/tambah_keranjang/' . $brng->id_brng, '<div class="btn btn-sm btn-primary">Add to Cart</div>') ?>
-                        <?php echo anchor('dashboard/index/', '<div class="btn btn-sm btn-danger">Back</div>') ?>
+                        <?php echo anchor('welcome/index/', '<div class="btn btn-sm btn-danger">Back</div>') ?>
 
                     </div>
+                    
             </div>
         <?php endforeach; ?>
         </div>
