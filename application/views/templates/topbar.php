@@ -49,7 +49,7 @@
                              </li>
                              <li class="ml-3"><?php echo anchor('auth/logout', 'Logout') ?></li>
                          <?php } else { ?>
-                             <li><?php echo anchor('auth/login', 'Login'); ?></li>
+                             <li><?php echo anchor('auth/index', 'Login'); ?></li>
 
                          <?php } ?>
                      </ul>

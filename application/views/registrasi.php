@@ -33,7 +33,7 @@
                             </form>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="<?php echo base_url('auth/login') ?>">Sudah Punya Akun? Silahkan Login!</a>
+                                <a class="small" href="<?php echo base_url('auth/index') ?>">Sudah Punya Akun? Silahkan Login!</a>
                             </div>
                         </div>
                     </div>

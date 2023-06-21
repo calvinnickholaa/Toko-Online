@@ -18,7 +18,7 @@ class Dashboard extends CI_Controller
             </button>
             </div>'
 			);
-			redirect('auth/login');
+			redirect('auth/index');
 		}
 	}
 

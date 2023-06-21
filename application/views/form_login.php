@@ -17,7 +17,7 @@
                                         <h1 class="h4 text-gray-900 mb-4">Login Page</h1>
                                     </div>
                                     <?php echo $this->session->flashdata('pesan') ?>
-                                    <form method="post" action="<?php echo base_url('auth/login') ?>" class="user">
+                                    <form method="post" action="<?php echo base_url('auth/index') ?>" class="user">
                                         <div class="form-group">
                                             <input type="text" name="username" placeholder="Masukkan Username Anda" class="form-control form-control-user">
                                             <?php echo form_error('username', '<div class="text-danger small ml-2">', '</div>') ?>

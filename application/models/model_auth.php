@@ -2,7 +2,7 @@
 
 class Model_auth extends CI_Model
 {
-    public function cek_login()
+    public function cek_login($username, $password)
     {
         $username = set_value('username');
         $password = password_verify(set_value('password'));
